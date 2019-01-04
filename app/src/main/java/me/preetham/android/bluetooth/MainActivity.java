@@ -41,9 +41,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupBluetoothSpp() {
-        bluetoothSpp = new BluetoothSpp();
-        bluetoothSpp.setConnectionListener(connectionListener);
-        bluetoothSpp.setDataListener(dataListener);
+        bluetoothSpp = new BluetoothSpp.Builder()
+                .setConnectionListener(connectionListener)
+                .setDataListener(dataListener)
+                .setBufferSize(2048)
+                .build();
 
         BluetoothDevice device = adapter.getRemoteDevice(mac_id);
         bluetoothSpp.connect(device);
@@ -53,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         dataListener = new SppDataListener() {
             @Override
             public void onDataReceived(byte[] data, int bytes_read) {
-                Log.e(TAG, "Received: " + new String(data, 0, bytes_read));
+                Log.i(TAG, "Received: " + new String(data, 0, bytes_read));
                 Date currentTime = Calendar.getInstance().getTime();
 
                 bluetoothSpp.write(currentTime.toString());
@@ -61,29 +63,29 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onDataSent(byte[] data) {
-                Log.e(TAG, "Sent: " + new String(data));
+                Log.i(TAG, "Sent: " + new String(data));
             }
         };
 
         connectionListener = new SppConnectionListener() {
             @Override
             public void onConnectionSuccess() {
-                Log.e(TAG, "onConnectionSuccess");
+                Log.i(TAG, "onConnectionSuccess");
             }
 
             @Override
             public void onConnectionFailure() {
-                Log.e(TAG, "onConnectionFailure");
+                Log.i(TAG, "onConnectionFailure");
             }
 
             @Override
             public void onConnectionLost() {
-                Log.e(TAG, "onConnectionLost");
+                Log.i(TAG, "onConnectionLost");
             }
 
             @Override
             public void onConnectionClosed() {
-                Log.e(TAG, "onConnectionClosed");
+                Log.i(TAG, "onConnectionClosed");
             }
         };
     }

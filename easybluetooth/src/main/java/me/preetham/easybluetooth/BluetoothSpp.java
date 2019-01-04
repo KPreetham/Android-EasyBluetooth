@@ -15,18 +15,70 @@ import me.preetham.easybluetooth.interfaces.SppDataListener;
 public class BluetoothSpp {
     private static final String TAG = BluetoothSpp.class.getSimpleName();
 
-    private UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
+    private UUID uuid;
 
-    private SppDataListener dataListener = null;
-    private SppConnectionListener connectionListener = null;
+    private SppDataListener dataListener;
+    private SppConnectionListener connectionListener;
 
-    private Mode mode = Mode.INSECURE;
+    private Mode mode;
+    private int bufferSize;
 
     private BluetoothSocket bluetoothSocket;
     private InputStream inputStream;
     private OutputStream outputStream;
 
-    private int bufferSize = 1024;
+
+    public BluetoothSpp(Builder builder) {
+        this.uuid = builder.uuid;
+        this.dataListener = builder.dataListener;
+        this.connectionListener = builder.connectionListener;
+        this.mode = builder.mode;
+        this.bufferSize = builder.bufferSize;
+    }
+
+    public static class Builder {
+        private UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
+
+        private SppDataListener dataListener = null;
+        private SppConnectionListener connectionListener = null;
+
+        private Mode mode = Mode.INSECURE;
+        private int bufferSize = 1024;
+
+        public BluetoothSpp build() {
+            return new BluetoothSpp(this);
+        }
+
+        public Builder setBufferSize(int bufferSize) {
+            this.bufferSize = bufferSize;
+            return this;
+        }
+
+        public Builder setConnectionListener(SppConnectionListener connectionListener) {
+            this.connectionListener = connectionListener;
+            return this;
+        }
+
+        public Builder setDataListener(SppDataListener dataListener) {
+            this.dataListener = dataListener;
+            return this;
+        }
+
+        public Builder setMode(Mode mode) {
+            this.mode = mode;
+            return this;
+        }
+
+        public Builder setUuid(String uuid) {
+            this.uuid = UUID.fromString(uuid);
+            return this;
+        }
+
+        public Builder setUuid(UUID uuid) {
+            this.uuid = uuid;
+            return this;
+        }
+    }
 
     private void start(final BluetoothSocket bluetoothSocket) {
         try {
@@ -108,30 +160,6 @@ public class BluetoothSpp {
         } catch (IOException ignored) {
 
         }
-    }
-
-    public void setBufferSize(int bufferSize) {
-        this.bufferSize = bufferSize;
-    }
-
-    public void setConnectionListener(SppConnectionListener connectionListener) {
-        this.connectionListener = connectionListener;
-    }
-
-    public void setDataListener(SppDataListener dataListener) {
-        this.dataListener = dataListener;
-    }
-
-    public void setMode(Mode mode) {
-        this.mode = mode;
-    }
-
-    public void setUuid(UUID uuid) {
-        this.uuid = uuid;
-    }
-
-    public void setUuid(String uuid) {
-        this.uuid = UUID.fromString(uuid);
     }
 
     public void write(byte[] bytes) {
