@@ -27,8 +27,10 @@ public class BluetoothSpp {
     private InputStream inputStream;
     private OutputStream outputStream;
 
+    private BluetoothDevice targetDevice;
 
-    public BluetoothSpp(Builder builder) {
+
+    private BluetoothSpp(Builder builder) {
         this.uuid = builder.uuid;
         this.dataListener = builder.dataListener;
         this.connectionListener = builder.connectionListener;
@@ -84,6 +86,10 @@ public class BluetoothSpp {
         try {
             inputStream = bluetoothSocket.getInputStream();
             outputStream = bluetoothSocket.getOutputStream();
+
+            if (connectionListener != null) {
+                connectionListener.onConnectionSuccess();
+            }
         } catch (IOException e) {
             if (connectionListener != null) {
                 connectionListener.onConnectionLost();
@@ -128,11 +134,9 @@ public class BluetoothSpp {
             }
 
             bluetoothSocket.connect();
+            this.targetDevice = targetDevice;
 
-            if (connectionListener != null) {
-                connectionListener.onConnectionSuccess();
-                start(bluetoothSocket);
-            }
+            start(bluetoothSocket);
         } catch (IOException ex) {
             if (connectionListener != null) {
                 connectionListener.onConnectionFailure();
@@ -160,6 +164,10 @@ public class BluetoothSpp {
         } catch (IOException ignored) {
 
         }
+    }
+
+    public BluetoothDevice getTargetDevice() {
+        return targetDevice;
     }
 
     public void write(byte[] bytes) {
