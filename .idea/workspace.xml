@@ -14,7 +14,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab9bdec-e8f6-4a98-9a4c-415812872ec1" name="Default" comment="" />
+    <list default="true" id="1ab9bdec-e8f6-4a98-9a4c-415812872ec1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easybluetooth/easybluetooth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/easybluetooth/easybluetooth.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easybluetooth/src/main/java/me/preetham/easybluetooth/BluetoothSpp.java" beforeDir="false" afterPath="$PROJECT_DIR$/easybluetooth/src/main/java/me/preetham/easybluetooth/BluetoothSpp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easybluetooth/src/test/java/me/preetham/easybluetooth/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/easybluetooth/src/test/java/me/preetham/easybluetooth/ExampleUnitTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,24 +45,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BluetoothSpp.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BluetoothSpp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/easybluetooth/src/main/java/me/preetham/easybluetooth/BluetoothSpp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
+            <state relative-caret-position="75">
+              <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#BluetoothSpp#0;class#BluetoothSpp#0" expanded="true" />
-                <element signature="class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-                <element signature="method#setBufferSize#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-                <element signature="method#setConnectionListener#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-                <element signature="method#setDataListener#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-                <element signature="method#setMode#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-                <element signature="method#setUuid#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-                <element signature="method#setUuid#1;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
+                <element signature="method#start#0;class#BluetoothSpp#0" expanded="true" />
+                <element signature="class#3076:3800" expanded="true" />
+                <element signature="method#run#0;class#3076:3800" expanded="true" />
                 <element signature="method#connect#0;class#BluetoothSpp#0" expanded="true" />
                 <element signature="method#disconnect#0;class#BluetoothSpp#0" expanded="true" />
+                <element signature="e#5229#5230#0" expanded="true" />
+                <element signature="e#5264#5265#0" expanded="true" />
                 <element signature="method#write#0;class#BluetoothSpp#0" expanded="true" />
+                <element signature="e#5661#5662#0" expanded="true" />
+                <element signature="e#5706#5707#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,7 +80,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
+            <state relative-caret-position="60">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#113#500#0" expanded="true" />
@@ -133,7 +142,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
+            <state relative-caret-position="40">
               <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
               <folding>
                 <element signature="e#49#519#0" expanded="true" />
@@ -146,11 +155,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExampleUnitTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ExampleUnitTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/easybluetooth/src/test/java/me/preetham/easybluetooth/ExampleUnitTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#345#346#0" expanded="true" />
                 <element signature="e#383#384#0" expanded="true" />
@@ -3525,10 +3534,10 @@
         <option value="$PROJECT_DIR$/easybluetooth/src/main/java/me/preetham/easybluetooth/BluetoothSpp.kt" />
         <option value="$PROJECT_DIR$/easybluetooth/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/me/preetham/android/bluetooth/MainActivity.java" />
-        <option value="$PROJECT_DIR$/easybluetooth/src/main/java/me/preetham/easybluetooth/BluetoothSpp.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/easybluetooth/src/test/java/me/preetham/easybluetooth/ExampleUnitTest.java" />
+        <option value="$PROJECT_DIR$/easybluetooth/src/main/java/me/preetham/easybluetooth/BluetoothSpp.java" />
       </list>
     </option>
   </component>
@@ -3543,6 +3552,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -3567,19 +3579,10 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="easybluetooth" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
-            <path>
-              <item name="AndroidBluetooth" type="1abcf292:AndroidViewProjectNode" />
-              <item name="easybluetooth" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="easybluetooth" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3734,7 +3737,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -3784,6 +3786,109 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/easybluetooth/src/main/java/me/preetham/easybluetooth/BluetoothSpp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#BluetoothSpp#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="method#start#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="class#3076:3800" expanded="true" />
+            <element signature="method#run#0;class#3076:3800" expanded="true" />
+            <element signature="method#connect#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="method#disconnect#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="e#5229#5230#0" expanded="true" />
+            <element signature="e#5264#5265#0" expanded="true" />
+            <element signature="method#write#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="e#5661#5662#0" expanded="true" />
+            <element signature="e#5706#5707#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easybluetooth/src/main/java/me/preetham/easybluetooth/interfaces/SppDataListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#113#500#0" expanded="true" />
+            <element signature="e#137#179#0" expanded="true" />
+            <element signature="e#197#498#0" expanded="true" />
+            <element signature="e#514#577#0" expanded="true" />
+            <element signature="e#533#575#0" expanded="true" />
+            <element signature="e#604#639#0" expanded="true" />
+            <element signature="e#604#639#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easybluetooth/proguard-rules.pro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easybluetooth/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding>
+            <element signature="e#126#547#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="e#49#519#0" expanded="true" />
+            <element signature="e#94#339#0" expanded="true" />
+            <element signature="e#355#517#0" expanded="true" />
+            <element signature="e#373#511#0" expanded="true" />
+            <element signature="e#534#985#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easybluetooth/src/test/java/me/preetham/easybluetooth/ExampleUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/me/preetham/android/bluetooth/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
@@ -3817,16 +3922,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#BluetoothSpp#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setBufferSize#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setConnectionListener#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setDataListener#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setMode#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setUuid#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setUuid#1;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="method#start#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="class#3076:3800" expanded="true" />
+            <element signature="method#run#0;class#3076:3800" expanded="true" />
             <element signature="method#connect#0;class#BluetoothSpp#0" expanded="true" />
             <element signature="method#disconnect#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="e#5229#5230#0" expanded="true" />
+            <element signature="e#5264#5265#0" expanded="true" />
             <element signature="method#write#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="e#5661#5662#0" expanded="true" />
+            <element signature="e#5706#5707#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3934,16 +4039,16 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#BluetoothSpp#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setBufferSize#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setConnectionListener#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setDataListener#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setMode#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setUuid#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setUuid#1;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="method#start#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="class#3076:3800" expanded="true" />
+            <element signature="method#run#0;class#3076:3800" expanded="true" />
             <element signature="method#connect#0;class#BluetoothSpp#0" expanded="true" />
             <element signature="method#disconnect#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="e#5229#5230#0" expanded="true" />
+            <element signature="e#5264#5265#0" expanded="true" />
             <element signature="method#write#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="e#5661#5662#0" expanded="true" />
+            <element signature="e#5706#5707#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -4017,13 +4122,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/me/preetham/android/bluetooth/SppConnectionThread.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/easybluetooth/src/main/java/me/preetham/easybluetooth/BluetoothSpp.kt" />
@@ -4074,27 +4179,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/easybluetooth/src/main/java/me/preetham/easybluetooth/BluetoothSpp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#BluetoothSpp#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setBufferSize#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setConnectionListener#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setDataListener#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setMode#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setUuid#0;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#setUuid#1;class#Builder#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#connect#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#disconnect#0;class#BluetoothSpp#0" expanded="true" />
-            <element signature="method#write#0;class#BluetoothSpp#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -4131,7 +4215,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="60">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#113#500#0" expanded="true" />
@@ -4147,7 +4231,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="40">
           <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
             <element signature="e#49#519#0" expanded="true" />
@@ -4162,10 +4246,31 @@
     <entry file="file://$PROJECT_DIR$/easybluetooth/src/test/java/me/preetham/easybluetooth/ExampleUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#345#346#0" expanded="true" />
             <element signature="e#383#384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/easybluetooth/src/main/java/me/preetham/easybluetooth/BluetoothSpp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#BluetoothSpp#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="method#start#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="class#3076:3800" expanded="true" />
+            <element signature="method#run#0;class#3076:3800" expanded="true" />
+            <element signature="method#connect#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="method#disconnect#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="e#5229#5230#0" expanded="true" />
+            <element signature="e#5264#5265#0" expanded="true" />
+            <element signature="method#write#0;class#BluetoothSpp#0" expanded="true" />
+            <element signature="e#5661#5662#0" expanded="true" />
+            <element signature="e#5706#5707#0" expanded="true" />
           </folding>
         </state>
       </provider>

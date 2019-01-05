@@ -170,6 +170,7 @@ public class BluetoothSpp {
         return targetDevice;
     }
 
+
     public void write(byte[] bytes) {
         try {
             outputStream.write(bytes);

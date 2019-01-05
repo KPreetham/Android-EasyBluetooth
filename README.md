@@ -1,6 +1,5 @@
 [![Release](https://jitpack.io/v/KPreetham/Android-EasyBluetooth.svg)](https://jitpack.io/#KPreetham/Android-EasyBluetooth) ![Travis-ci](https://api.travis-ci.org/KPreetham/Android-EasyBluetooth.svg)
 
-
 # Android-EasyBluetooth
 A collection of easy to use bluetooth utilities for Android.
 
