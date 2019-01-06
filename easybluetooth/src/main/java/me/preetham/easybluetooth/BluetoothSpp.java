@@ -22,6 +22,7 @@ public class BluetoothSpp {
 
     private Mode mode;
     private int bufferSize;
+    private boolean isRunning = false;
 
     private BluetoothSocket bluetoothSocket;
     private InputStream inputStream;
@@ -89,6 +90,7 @@ public class BluetoothSpp {
 
             if (connectionListener != null) {
                 connectionListener.onConnectionSuccess();
+                isRunning = true;
             }
         } catch (IOException e) {
             if (connectionListener != null) {
@@ -103,7 +105,7 @@ public class BluetoothSpp {
 
             @Override
             public void run() {
-                while (true) {
+                while (isRunning) {
                     try {
                         bytes_read = inputStream.read(byte_data);
                         if (dataListener != null) {
@@ -145,6 +147,7 @@ public class BluetoothSpp {
     }
 
     public void disconnect() {
+        isRunning = false;
         try {
             if (inputStream != null) {
                 inputStream.close();
@@ -170,6 +173,9 @@ public class BluetoothSpp {
         return targetDevice;
     }
 
+    public boolean isRunning() {
+        return isRunning;
+    }
 
     public void write(byte[] bytes) {
         try {
