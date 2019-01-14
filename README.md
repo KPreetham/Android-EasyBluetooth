@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d5408f25a492496eb1d08d3ea91d0de9)](https://app.codacy.com/app/KPreetham/Android-EasyBluetooth?utm_source=github.com&utm_medium=referral&utm_content=KPreetham/Android-EasyBluetooth&utm_campaign=Badge_Grade_Settings)
 [![Release](https://jitpack.io/v/KPreetham/Android-EasyBluetooth.svg)](https://jitpack.io/#KPreetham/Android-EasyBluetooth) ![Travis-ci](https://api.travis-ci.org/KPreetham/Android-EasyBluetooth.svg)
 
 # Android-EasyBluetooth
