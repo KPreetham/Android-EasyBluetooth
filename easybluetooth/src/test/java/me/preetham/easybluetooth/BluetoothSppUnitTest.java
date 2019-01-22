@@ -29,6 +29,7 @@ import static org.mockito.Mockito.when;
 @RunWith(MockitoJUnitRunner.class)
 public class BluetoothSppUnitTest {
     private final String DATA_SENT = "hello world";
+    private final String DATA_RECEIVED = "hello_hello";
 
     @Mock
     BluetoothDevice mock_bluetooth_device;
@@ -77,11 +78,12 @@ public class BluetoothSppUnitTest {
 
         mock_bluetoothSpp.connect(mock_bluetooth_device);
         mock_bluetoothSpp.write(DATA_SENT);
-    }
 
-    @Test
-    public void test_bluetooth_spp_write_data() {
-
+        try {
+            mock_inputStream.read(DATA_RECEIVED.getBytes());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public BluetoothSpp.Builder get_dummy_bluetooth_spp_builder() {
@@ -99,8 +101,8 @@ public class BluetoothSppUnitTest {
         try {
             setup_mock_bluetooth_device();
             setup_mock_bluetooth_socket();
-            setup_mock_io_streams();
             setup_mock_data_listener();
+            setup_mock_io_streams();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -110,16 +112,16 @@ public class BluetoothSppUnitTest {
         doAnswer(new Answer() {
             @Override
             public Object answer(InvocationOnMock invocation) {
-                mock_dataListener.onDataReceived(DATA_SENT.getBytes(), DATA_SENT.length());
+                mock_dataListener.onDataReceived(DATA_RECEIVED.getBytes(), DATA_RECEIVED.length());
                 return null;
             }
-        }).when(mock_inputStream).read();
+        }).when(mock_inputStream).read(any(byte[].class));
 
         doAnswer(new Answer() {
             @Override
             public Object answer(InvocationOnMock invocation) {
                 String tmp = new String(invocation.getArgumentAt(0, byte[].class));
-                assertEquals(tmp, DATA_SENT);
+                assertEquals(DATA_SENT, tmp);
                 return null;
             }
         }).when(mock_outputStream).write(DATA_SENT.getBytes());
@@ -148,5 +150,17 @@ public class BluetoothSppUnitTest {
                 return null;
             }
         }).when(mock_dataListener).onDataSent(any(byte[].class));
+
+        doAnswer(new Answer() {
+            @Override
+            public Object answer(InvocationOnMock invocation) {
+                int length = invocation.getArgumentAt(1, Integer.class);
+                String data = new String(invocation.getArgumentAt(0, byte[].class), length);
+
+                assertEquals(DATA_RECEIVED, data);
+                assertEquals(DATA_RECEIVED.length(), length);
+                return null;
+            }
+        }).when(mock_dataListener).onDataReceived(any(byte[].class), any(Integer.class));
     }
 }
