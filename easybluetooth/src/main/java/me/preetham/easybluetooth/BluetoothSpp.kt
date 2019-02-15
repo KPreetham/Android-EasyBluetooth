@@ -10,7 +10,7 @@ import java.io.InputStream
 import java.io.OutputStream
 import java.util.*
 
-class BluetoothSpp private constructor(builder: Builder) {
+open class BluetoothSpp private constructor(builder: Builder) {
 
     private val uuid: UUID
 
@@ -129,7 +129,6 @@ class BluetoothSpp private constructor(builder: Builder) {
         } catch (ex: IOException) {
             connectionListener?.onConnectionFailure()
         }
-
     }
 
     fun disconnect() {
