@@ -1,7 +1,9 @@
 package me.preetham.easybluetooth
 
+import android.Manifest
 import android.bluetooth.BluetoothDevice
 import android.bluetooth.BluetoothSocket
+import androidx.annotation.RequiresPermission
 import me.preetham.easybluetooth.enums.Mode
 import me.preetham.easybluetooth.interfaces.SppConnectionListener
 import me.preetham.easybluetooth.interfaces.SppDataListener
@@ -83,6 +85,7 @@ class BluetoothSpp private constructor(builder: Builder) {
         }
     }
 
+    @RequiresPermission(Manifest.permission.BLUETOOTH_CONNECT)
     private fun start(bluetoothSocket: BluetoothSocket) {
         try {
             inputStream = bluetoothSocket.inputStream
@@ -115,6 +118,7 @@ class BluetoothSpp private constructor(builder: Builder) {
         sppThread.start()
     }
 
+    @RequiresPermission(Manifest.permission.BLUETOOTH_CONNECT)
     fun connect(targetDevice: BluetoothDevice) {
         try {
             bluetoothSocket = when (mode) {
