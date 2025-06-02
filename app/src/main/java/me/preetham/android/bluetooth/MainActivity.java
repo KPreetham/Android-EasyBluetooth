@@ -1,9 +1,10 @@
 package me.preetham.android.bluetooth;
 
+import android.annotation.SuppressLint;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 
 import java.util.Calendar;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
+    @SuppressLint("MissingPermission")
     private void setupBluetoothSpp() {
         bluetoothSpp = new BluetoothSpp.Builder()
                 .setConnectionListener(connectionListener)
